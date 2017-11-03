@@ -65,7 +65,7 @@
   position: absolute;
   z-index: 1;
   top: 324px;
-  background-color: teal;//#F6F8F9;
+  background-color: #F6F8F9;
   padding: 20px;
   @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
     width: 100%;

@@ -452,7 +452,7 @@ hr {
   position: absolute;
   z-index: 1;
   top: 324px;
-  background-color: teal;
+  background-color: #F6F8F9;
   padding: 20px;
   display: flex;
   flex-direction: row;
