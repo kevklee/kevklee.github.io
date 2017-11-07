@@ -35,20 +35,30 @@ body {
 
 //About Us
 
-.about {
+.why {
   margin-top: 50px;
-  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+  text-align: center;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
   @media(min-width: $break-lg){
-  @include flexy ($wrap: no-wrap, $just: left, $align: center, $dir: row);
+  @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: column);
   margin-top: 80px;
   margin-left: 25px;
+  text-align: left;
   }
 }
 
-.about h1 {
+.why h1 {
   font-size: 32px;
   @media(min-width: $break-lg){
   font-size: 48px;
+  }
+}
+
+.why h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  @media(min-width: $break-lg){
+  font-size: 32px;
   }
 }
 
@@ -61,21 +71,32 @@ body {
   @media(min-width: $break-lg){
     text-align: left;
     @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: column);
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 25px;
   }
 }
 
 .about-text h2 {
   font-size: 24px;
+  color: #4A4A4A;
   @media(min-width: $break-lg){
   font-size: 48px;
   }
 }
 
 .about-text p {
+  color: #4A4A4A;
   margin-top: 10px;
   max-width: 548px;
+}
+
+//Interview
+
+#meaningful {
+  margin-bottom: 50px;
+  @media(min-width: $break-lg){
+  margin-bottom: 350px;
+}
 }
 
 //Resources

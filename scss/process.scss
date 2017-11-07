@@ -5,22 +5,60 @@
         'content/header.scss',
         'content/footer.scss';
 
+//Body
+
+body {
+  background-color: #F6F8F9;
+}
+
+//Crumbs
+
+.aboutcrumb {
+  background-color: white;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #F6F8F9;
+  margin-bottom: 0;
+}
+
+.aboutcrumb a {
+  text-decoration: none;
+}
+
+.banner-wrap {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 //About Us
 
-.about {
+.application {
   margin-top: 50px;
-  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+  text-align: center;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
   @media(min-width: $break-lg){
-  @include flexy ($wrap: no-wrap, $just: left, $align: center, $dir: row);
+  @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: column);
   margin-top: 80px;
   margin-left: 25px;
+  text-align: left;
   }
 }
 
-.about h1 {
+.application h1 {
   font-size: 32px;
   @media(min-width: $break-lg){
   font-size: 48px;
+  }
+}
+
+.application h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  @media(min-width: $break-lg){
+  font-size: 36px;
   }
 }
 
@@ -33,21 +71,29 @@
   @media(min-width: $break-lg){
     text-align: left;
     @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: column);
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 25px;
   }
 }
 
 .about-text h2 {
   font-size: 24px;
+  color: #4A4A4A;
   @media(min-width: $break-lg){
   font-size: 48px;
   }
 }
 
 .about-text p {
+  color: #4A4A4A;
   margin-top: 10px;
   max-width: 548px;
+}
+
+//Interview
+
+#interview {
+  margin-bottom: 50px;
 }
 
 //Resources
