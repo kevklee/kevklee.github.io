@@ -61,15 +61,48 @@ body {
 //Dropdowns
 
 .dropdown-wrap {
+  margin-top: 20px;
   @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
 }
 
 .dropdown-wrap a {
+  font-family: "Avenir", sans-serif;
+  font-weight: bold;
   color: $color-nav;
   border: 1px solid #DDDDDD;
-  width: 700px;
+  width: 100%;
   font-size: 14px;
   padding: 10px;
+  @include flexy ($wrap: no-wrap, $just: space-between, $align: left, $dir: row);
+  @media(min-width: $break-m){
+    width: 700px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+}
+
+.open-dropdown {
+  width: 100%;
+  @include flexy ($wrap: no-wrap, $just: space-between, $align: left, $dir: row);
+}
+
+#exam-drop {
+  display:none !important;
+  background-color: white;
+  padding-top: 10px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+}
+
+#exam-drop p {
+  margin-top: 15px;
+}
+
+#exam-drop.open {
+  display:block !important;
+}
+
+.arrow-2 {
+  display: none;
 }
 
 #dropdown-bot {
@@ -101,7 +134,7 @@ body {
   @media(min-width: $break-lg){
   @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
   padding-left: 40px;
-  margin-top: 200px;
+  margin-top: 170px;
   }
 }
 
