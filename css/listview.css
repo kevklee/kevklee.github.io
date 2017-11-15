@@ -35,7 +35,8 @@
       align-items: center; } }
   @media (min-width: 992px) {
     .menu {
-      width: 920px; } }
+      width: 920px;
+      width: 725px; } }
 
 .menu a {
   display: none;
@@ -51,8 +52,8 @@
     background-color: #0F3753; }
   @media (min-width: 768px) {
     .menu a {
-      font-size: 18px;
       display: block;
+      font-size: 18px;
       color: white; }
       .menu a:hover {
         color: #639E29; } }
@@ -534,7 +535,6 @@ hr {
 
 * {
   margin: 0;
-  padding: 0;
-  font-family: "Perpetua", sans-serif; }
+  padding: 0; }
 
 /*# sourceMappingURL=listview.css.map */

@@ -1,9 +1,5 @@
 // Navigation CSS
 
-nav {
-
-}
-
 .nav-wrapper {
     background-color: $color-nav;
     height: 70px;
@@ -35,6 +31,7 @@ nav {
     }
     @media(min-width: $break-lg){
     width: 920px;
+    width: 725px;
     }
 }
 
@@ -52,8 +49,8 @@ nav {
         background-color: $color-nav;
     }
     @media(min-width: $break-m){
-        font-size: 18px;
         display: block;
+        font-size: 18px;
         color: white;
         &:hover {
             color: #639E29;
@@ -74,4 +71,4 @@ nav {
     @media(min-width: $break-m){
         display: none;
     }
-}
+  }
